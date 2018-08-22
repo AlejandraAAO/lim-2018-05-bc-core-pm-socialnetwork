@@ -91,11 +91,10 @@ btnSave.addEventListener('click', (user) => {
     authorPost.appendChild(nameAuthor);
     //Aqui acabamos la creacion de botones de like
     var contPost = document.createElement('div');
-    var textPost = document.createElement('textarea')
+    var textPost = document.createElement('textarea');
     textPost.setAttribute("id", newPost);
 
     textPost.innerHTML = post.value;
-
 
     btnDelete.addEventListener('click', () => {
       let questions = confirm('¿Deseas eliminar este post?');
@@ -111,7 +110,7 @@ btnSave.addEventListener('click', (user) => {
 
       };
     });
-
+     
     //REALIZAMOS LOS EVENTOS DE LOS BOTONES LIKE
     let contador = 0;
     btnLike.addEventListener('click', () => {
